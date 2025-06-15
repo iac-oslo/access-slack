@@ -6,8 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-      "## Infrastructure as Code User Group Oslo"
-      Thank you for interest in joining our Slack workspace. Please fill-in this form to request access.
+        "## Infrastructure as Code User Group Oslo"
+        Thank you for interest in joining our Slack workspace. Please fill-in this form to request access.
   - type: input
     id: email
     attributes:
