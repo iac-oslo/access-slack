@@ -1,0 +1,34 @@
+name: Access to Slack
+description: Request access to the Slack workspace
+title: "[Slack Access] "
+labels: [slack, access]
+body:
+  - type: markdown
+    attributes:
+      value: |
+      "## Infrastructure as Code User Group Oslo"
+      Thank you for interest in joining our Slack workspace. Please fill-in this form to request access.
+  - type: input
+    id: email
+    attributes:
+      label: E-mail address
+      description: Please provide your e-mail address (must match your Slack e-mail).
+      placeholder: name@example.com
+    validations:
+      required: true
+  - type: checkboxes
+    id: compliance
+    attributes:
+      label: Community Rules Compliance
+      description: Please confirm that you have read and agree to comply with the Community rules / [Code of Conduct](http://confcodeofconduct.com/).
+      options:
+        - label: I confirm that I have read and I will comply with the Community rules.
+    validations:
+      required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: (Optional) Add any additional information or comments here.
+    validations:
+      required: false
