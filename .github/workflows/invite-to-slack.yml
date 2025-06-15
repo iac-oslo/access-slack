@@ -8,6 +8,17 @@ jobs:
     if: github.event.label.name == 'access-approved'
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install node-fetch
+
       - name: Extract email and invite to Slack
         uses: actions/github-script@v7
         env:
@@ -22,9 +33,6 @@ jobs:
               return;
             }
             const email = match[0];
-            // Optionally, add more email validation here if desired
-
-            // Call Slack API to invite user
             const fetch = require('node-fetch');
             const SLACK_TEAM_ID = 'T08TKC56VQ8';
 
@@ -35,7 +43,7 @@ jobs:
                 'Content-Type': 'application/json; charset=utf-8',
               },
               body: JSON.stringify({
-                channel_ids: C08TKC5G140,
+                channel_ids: "C08TKC5G140",
                 email: email,
                 team_id: SLACK_TEAM_ID
               }),
