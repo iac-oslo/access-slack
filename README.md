@@ -12,7 +12,8 @@ A repository for automating access requests to our Slack workspace
 4. Read the [Code of Conduct]() and select the 'I confirm that I have read and I will comply with the Community rules.' checkbox.
 5. Click **Create**.
 
-<img width="796" height="688" alt="image" src="https://github.com/user-attachments/assets/a30bb4e6-472c-403f-b6e6-341bbaea6796" />
+<img width="915" height="554" alt="image" src="https://github.com/user-attachments/assets/89894d2f-5e2c-47f1-b972-db8c01cfeffd" />
+
 
 
 > [!NOTE]
